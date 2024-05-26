@@ -24,4 +24,21 @@ public class Auto extends VehiculoPasajeros {
         System.out.println("Tipo de Combustible: " + tipoCombustible);
 
     }
+    //sobre escirbirmos el metodo.
+    @Override
+    public void realizarMantenimiento(){
+        super.realizarMantenimiento();
+        System.out.println("El mantenimiento aplicado fue lo siguiente:");
+        System.out.println("Reparaciones de asientos, pintura nueva.");
+        
+    }
+    
+    // Metodo calcular costo del mantenimiento
+    public int calcularCostoMantenimiento(int costoxkm, int kmRecorridos) {
+        int costoTotal = 0;
+        costoTotal = costoxkm * kmRecorridos;
+        System.out.println("Costo de Mantenimiento: C$ " + costoTotal);
+        return costoTotal;
+    }
+    
 }

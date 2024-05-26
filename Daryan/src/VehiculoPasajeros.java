@@ -22,4 +22,10 @@ public class VehiculoPasajeros extends Vehiculo {
         super.mostrarInfo();
         System.out.println("Numero de Pasajeros " + numPasajeros);
     }
+
+
+    @Override
+    public void realizarMantenimiento(){
+super.realizarMantenimiento();
+    }
 }

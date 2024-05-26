@@ -13,5 +13,18 @@ public class App {
         System.out.println("\n Informacion del Camion: ");
         camion.mostrarInfo();
         
+
+
+        // mostrarmos los mantenimientos de cada clase.
+        System.out.println("Mantenimiento del auto.");
+        auto.realizarMantenimiento();
+
+        System.out.println("Mantenimiento del camión.");
+        camion.realizarMantenimiento();
+
+
+        //mostrarmos el costo X km recorridos.
+        System.out.println("El costo del mantenimiento del auto fue de: ");
+        auto.calcularCostoMantenimiento(10, 20);
     }
 }

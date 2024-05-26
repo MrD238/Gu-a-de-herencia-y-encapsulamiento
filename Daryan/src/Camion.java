@@ -22,4 +22,13 @@ public class Camion extends VehiculoCarga {
         super.mostrarInfo();
         System.out.println("Numero de Ejes: " + numEjes);
     }
+
+
+    //sobre escirbirmos el realizar mantenimiento.
+    @Override
+    public void realizarMantenimiento(){
+        super.realizarMantenimiento();
+        System.out.println("El mantenimiento aplicado fue lo siguiente:");
+        System.out.println("Repaciones en los amortizadores, cambio de aceite, mejora en el motor y su capacidad de potencia");
+    }
 }
